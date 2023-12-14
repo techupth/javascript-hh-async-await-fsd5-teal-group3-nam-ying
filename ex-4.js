@@ -13,3 +13,11 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+
+async function checkPromis() {
+  const onSuccess = await getJohnProfile();
+  console.log(onSuccess);
+}
+checkPromis();
+
+//await getJohnProfile().then(onSuccess);

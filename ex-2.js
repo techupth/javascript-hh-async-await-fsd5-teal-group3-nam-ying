@@ -12,4 +12,11 @@ let getJohnProfile = () => {
   });
 };
 
-// Start coding here
+// const onSuccess = (data) => {
+//   console.log(data);
+// };
+const onFailure = (error) => {
+  console.log(error);
+};
+
+getJohnProfile().catch(onFailure);

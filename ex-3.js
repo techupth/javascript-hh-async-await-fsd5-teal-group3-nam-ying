@@ -24,7 +24,7 @@ let getJohnOrders = () => {
           },
           {
             orderId: "002",
-            items: ["orange", "itim"],
+            items: ["orange", "item"],
           },
         ]),
       1500
@@ -32,4 +32,14 @@ let getJohnOrders = () => {
   });
 };
 
-// Start coding here
+const onSuccess = (data) => {
+  console.log(data);
+};
+const onFailure = (error) => {
+  console.log(error);
+};
+
+getJohnProfile().then(onSuccess).catch(onFailure);
+getJohnOrders().then(onSuccess).catch(onFailure);
+
+console.log(onSuccess);
