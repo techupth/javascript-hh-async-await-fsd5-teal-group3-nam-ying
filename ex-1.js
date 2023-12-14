@@ -17,7 +17,7 @@ let getJohnProfile = () => {
 const onSuccess = (data) => {
   console.log(data);
 };
-const onFailure = (error) => {
-  console.log(error);
-};
+// const onFailure = (error) => {
+//   console.log(error);
+// };
 getJohnProfile().then(onSuccess);

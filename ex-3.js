@@ -41,5 +41,3 @@ const onFailure = (error) => {
 
 getJohnProfile().then(onSuccess).catch(onFailure);
 getJohnOrders().then(onSuccess).catch(onFailure);
-
-console.log(onSuccess);

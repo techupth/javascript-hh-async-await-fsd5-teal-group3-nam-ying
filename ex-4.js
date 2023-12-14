@@ -14,10 +14,11 @@ let getJohnProfile = () => {
 };
 // Start coding here
 
-async function checkPromis() {
+async function checkPromise() {
   const onSuccess = await getJohnProfile();
   console.log(onSuccess);
 }
-checkPromis();
+
+checkPromise();
 
 //await getJohnProfile().then(onSuccess);
